@@ -19,13 +19,7 @@ class DemoViewModel : ViewModel() {
     }
 
     fun changePricesInTheList() {
-        val listChange = arrayListOf<Model>(
-            Model(1, "Bitcoin", 8000),
-            Model(2, "Ethereum", 600),
-            Model(3, "Litecoin", 250),
-            Model(4, "Bitcoin Cash", 100),
-            Model(5, "Bitcoin Cash", 100),
-        )
+        val listChange = arrayListOf<Model>()
         list.forEach {
             listChange.add(Model(it.id, it.name, 100))
         }
